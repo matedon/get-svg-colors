@@ -17,6 +17,12 @@ describe('get-svg-colors', function(){
     assert(Array.isArray(colors.strokes))
   })
 
+  it('accepts an svg with rgb colors', function() {
+    var colors = getColors(__dirname + '/fixtures/kraft_rgb.svg')
+    assert(Array.isArray(colors.fills) && colors.fills.length)
+    assert(Array.isArray(colors.strokes) && colors.fills.length)
+  })
+
   it('accepts an SVG string as input', function() {
     var colors = getColors(fs.readFileSync(__dirname + '/fixtures/australia.svg', 'utf8'))
     assert(Array.isArray(colors.fills))

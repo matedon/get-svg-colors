@@ -1,17 +1,17 @@
-# get-svg-colors
+# svg2colors
 
 Extract stroke and fill colors from SVG files. Designed for use in node, not the browser.
 
 ## Installation
 
 ```sh
-npm install get-svg-colors --save
+npm install svg2colors --save
 ```
 
 ## Usage
 
 ```js
-const getColors = require("get-svg-colors")
+const getColors = require("svg2colors")
 
 // Give it an SVG filename
 const colors = getColors(__dirname + '/australia.svg')

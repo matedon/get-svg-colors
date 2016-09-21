@@ -1,11 +1,11 @@
 {
-  "name": "get-svg-colors",
-  "version": "1.3.0",
+  "name": "svg2colors",
+  "version": "1.4.0",
   "description": "Extract stroke and fill colors from SVG files",
-  "repository": "github:zeke/get-svg-colors",
+  "repository": "https://github.com/matedon/svg2colors",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node ./node_modules/mocha/bin/mocha -R spec"
   },
   "author": "",
   "license": "ISC",
@@ -13,8 +13,7 @@
     "cheerio": "^0.19.0",
     "chroma-js": "^1.1.1",
     "is-svg": "^1.1.1",
-    "lodash.compact": "^3.0.0",
-    "lodash.uniq": "^3.2.2"
+    "lodash": "^4.16.1"
   },
   "devDependencies": {
     "mocha": "^2.3.3"
